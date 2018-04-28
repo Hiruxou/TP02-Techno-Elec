@@ -1,3 +1,20 @@
-<p>
-  login works!
-</p>
+<div class="container">
+ <div class="col-md-12">
+  <div id="logbox">
+    <form id="signup" #f="ngForm" (ngSubmit)="onSubmitUser()">
+      <h1>Connexion à un compte</h1><br>
+      <input name="user[email]" type="email" placeholder="nom d'utilisateur" class="InputLoginChamps" [(ngModel)]="username"/>
+      <input name="user[password]" type="password" placeholder="mot de passe" required="required" class="InputLoginChamps" [(ngModel)]="password"/>
+      <p class="pLoginErrorMessage" *ngIf="loginError">
+           {{loginErrorMessage}}
+      </p>
+      <p class="pLoginErrorMessage" *ngIf="fieldNotFilled">
+          {{fieldNotFilledMessage}}
+      </p>
+      <input type="submit" value="Connexion" class="inputButtonLoginConnexion"/>
+    </form>
+      <div class="text-center"><p  class="simple_text">- OU -</p></div>
+      <input routerLink="/inscription" type="submit" value="Créer un compte" class="inputButtonLoginCreate"/>
+    </div>
+  </div>
+</div>
