@@ -1,0 +1,235 @@
+/* ---------------------------- */
+/* ------- */
+/* GENERAL */
+/* ------- */
+/* ---------------------------- */
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+}
+
+::selection {
+  background-color: #b5e2e7;
+}
+
+::-moz-selection {
+  background-color: #8ac7d8;
+}
+
+body {
+  background: #3CC;
+}
+
+.container {
+  display: block;
+  height: 100%;
+}
+
+#logbox {
+  padding: 10px;
+  margin: 50px auto;
+  width: 340px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%;
+  color: #757575;
+  font-weight: 300;
+}
+
+h1, input {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.pass:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+/* ---------------------------- */
+/* ------------- */
+/* PAGE DE LOGIN */
+/* ------------- */
+/* ---------------------------- */
+
+.InputLoginChamps {
+  width: 75%;
+  height: 50px;
+  display: block;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  border: none;
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+}
+
+.InputLoginChamps:focus {
+  outline: none;
+  border-bottom-color: #3CC !important;
+}
+
+.InputLoginChamps:hover {
+  border-color: #dcdcdc;
+}
+
+.InputLoginChamps:invalid {
+  box-shadow: none;
+}
+
+.inputButtonLoginConnexion {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #3CC;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #2CADAD;
+  -moz-box-shadow: 0 5px 0 #2CADAD;
+  box-shadow: 0 5px 0 #2CADAD;
+}
+.inputButtonLoginConnexion:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #2CADAD;
+  -moz-box-shadow: 0 3px 0 #2CADAD;
+  box-shadow: 0 3px 0 #2CADAD;
+  cursor: pointer;
+}
+.inputButtonLoginConnexion:active {
+  top: 5px;
+  box-shadow: none;
+}
+.inputButtonLoginConnexion:focus {
+  outline: none;
+}
+
+.inputButtonLoginCreate {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #47CE42;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #379B33;
+  -moz-box-shadow: 0 5px 0 #379B33;
+  box-shadow: 0 5px 0 #379B33;
+}
+.inputButtonLoginCreate:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #379B33;
+  -moz-box-shadow: 0 3px 0 #379B33;
+  box-shadow: 0 3px 0 #379B33;
+  cursor: pointer;
+}
+.inputButtonLoginCreate:active {
+  top: 5px;
+  box-shadow: none;
+}
+.inputButtonLoginCreate:focus {
+  outline: none;
+}
+
+.pLoginErrorMessage {
+  color: #FE0000;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ---------------------------- */
+/* -------------- */
+/* PAGE DE SIGNIN */
+/* -------------- */
+/* ---------------------------- */
+
+.inputButtonSigninNext {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #3CC;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #2CADAD;
+  -moz-box-shadow: 0 5px 0 #2CADAD;
+  box-shadow: 0 5px 0 #2CADAD;
+}
+.inputButtonSigninNext:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #2CADAD;
+  -moz-box-shadow: 0 3px 0 #2CADAD;
+  box-shadow: 0 3px 0 #2CADAD;
+  cursor: pointer;
+}
+.inputButtonSigninNext:active {
+  top: 5px;
+  box-shadow: none;
+}
+.inputButtonSigninNext:focus {
+  outline: none;
+}
+
+.InputSigninChamps {
+  width: 75%;
+  height: 50px;
+  display: block;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  border: none;
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+}
+
+.InputSigninChamps:focus {
+  outline: none;
+  border-bottom-color: #3CC !important;
+}
+
+.InputSigninChamps:hover {
+  border-color: #dcdcdc;
+}
+
+.InputSigninChamps:invalid {
+  box-shadow: none;
+}
+
+.pSigninText {
+  text-align: center;
+  font-size: 90%;
+  color: #000000;
+  font-weight: 300;
+}
+
+.pSigninText, input {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.buttunSigninReturn, button {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  outline: 0;
+  background: green;
+  width: 20%;
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
