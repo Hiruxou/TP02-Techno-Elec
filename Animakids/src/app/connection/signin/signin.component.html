@@ -1,3 +1,20 @@
-<p>
-  signin works!
-</p>
+<div class="container">
+  <div class="col-md-12">
+    <div id="logbox">
+      <!-- <form #f="ngForm" (ngSubmit)="onSubmitStep(1)" class="ng-untouched ng-pristine ng-valid"> -->
+        <h1>Enregistrement d'un joueur</h1>
+        <p class="pSigninText">Veuillez rentrer un pseudonyme et un mot de passe</p>
+        <input class="InputSigninChamps" name="user[name]" placeholder="Pseudonyme" required="required" type="name" [(ngModel)]="username">
+        <input name="user[password]" type="password" placeholder="Mot de passe" required="required" class="InputSigninChamps" [(ngModel)]="userPassword" />
+        <input name="user[password2]" type="password" placeholder="Confirmation mot de passe" required="required" class="InputSigninChamps" [(ngModel)]="userConfirmPassword" />
+        <p *ngIf="emailError">
+          {{this.errorMessage}}
+        </p>
+        <input class="inputButtonSigninNext" type="submit" value="Confirmer">
+        <div class="text">
+          <a routerLink="/connection"><button class="buttunSigninReturn">Retour</button></a>
+        </div>
+      <!-- </form> -->
+    </div>
+  </div>
+</div>
