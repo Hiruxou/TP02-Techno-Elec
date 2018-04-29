@@ -258,3 +258,50 @@ h1, input {
 .aHeaderProfil:hover {
   color: grey;
 }
+
+/* ---------------------------- */
+/* -------------- */
+/* PAGE DE FOOTER */
+/* -------------- */
+/* ---------------------------- */
+
+
+.LayoutFooterNav {
+    left: -50%;
+}
+
+.LayoutFooterTextList {
+	left: 33%;
+	position: relative;
+}
+
+.LayoutFooterBarreList {
+	left: 17%;
+	position: relative;
+}
+
+.aLayoutLien {
+margin-left: 3%;
+font-size: 80%;
+color: white;
+}
+
+.aLayoutLienFb {
+margin-left: 3%;
+font-size: 80%;
+}
+
+.aLayoutLien:hover {
+font-style: none;
+color: grey;
+}
+
+.LayoutFooterFbTw {
+left: 35%;
+position: relative;
+}
+
+.iLayoutIcone {
+  margin-top: 5px;
+  font-size: 140% !important;
+}

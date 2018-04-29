@@ -16,6 +16,7 @@ import { HeaderComponent } from './dashboard/layout/header/header.component';
 import { MenuComponent } from './dashboard/body/menu/menu.component';
 import { Jeu1Component } from './dashboard/body/jeu1/jeu1.component';
 import { Jeu2Component } from './dashboard/body/jeu2/jeu2.component';
+import { FooterComponent } from './dashboard/layout/footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     MenuComponent,
     Jeu1Component,
-    Jeu2Component
+    Jeu2Component,
+    FooterComponent,
   ],
   imports: [
     RouterModule.forRoot(
