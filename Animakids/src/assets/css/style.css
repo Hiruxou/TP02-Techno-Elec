@@ -233,3 +233,28 @@ h1, input {
   cursor: pointer;
   border-radius: 10px;
 }
+
+/* ---------------------------- */
+/* -------------- */
+/* PAGE DE HEADER */
+/* -------------- */
+/* ---------------------------- */
+
+.aHeaderIcone {
+  color: white;
+  margin-right: 20px;
+}
+
+.aHeaderIcone:hover {
+  color: grey;
+}
+
+.aHeaderProfil {
+  color: white;
+  margin-left: 50px;
+
+}
+
+.aHeaderProfil:hover {
+  color: grey;
+}

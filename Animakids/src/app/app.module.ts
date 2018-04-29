@@ -11,6 +11,10 @@ import { SigninComponent } from './connection/signin/signin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutComponent } from './dashboard/layout/layout.component';
 import { BodyComponent } from './dashboard/body/body.component';
+import { HeaderComponent } from './dashboard/layout/header/header.component';
+import { MenuComponent } from './dashboard/body/menu/menu.component';
+import { Jeu1Component } from './dashboard/body/jeu1/jeu1.component';
+import { Jeu2Component } from './dashboard/body/jeu2/jeu2.component';
 
 const appRoutes: Routes = [
   {
@@ -44,7 +48,11 @@ const appRoutes: Routes = [
     SigninComponent,
     DashboardComponent,
     LayoutComponent,
-    BodyComponent
+    BodyComponent,
+    HeaderComponent,
+    MenuComponent,
+    Jeu1Component,
+    Jeu2Component
   ],
   imports: [
     RouterModule.forRoot(
