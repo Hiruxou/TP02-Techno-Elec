@@ -1,38 +1,21 @@
-<!--<div class="container">
- <div class="col-md-12">
-  <div id="logbox">-->
-    <!-- <form id="signup" #f="ngForm" (ngSubmit)="onSubmitUser()"> -->
-     <!-- <h1>Connexion à un compte</h1><br>
-      <input name="user[email]" type="email" placeholder="nom d'utilisateur" class="InputLoginChamps" [(ngModel)]="loginData.username"/>
-      <input name="user[password]" type="password" placeholder="mot de passe" required="required" class="InputLoginChamps" [(ngModel)]="loginData.password"/>
-      <p class="pLoginErrorMessage" *ngIf="loginError">
-           {{loginErrorMessage}}
-      </p>
-      <p class="pLoginErrorMessage" *ngIf="fieldNotFilled">
-          {{fieldNotFilledMessage}}
-      </p>
-      <input routerLink="/dashboard" type="submit" value="Connexion" class="inputButtonLoginConnexion" [disabled]="!loginForm.form.valid"/>-->
-    <!-- </form> -->
-     <!-- <div class="text-center"><p  class="simple_text">- OU -</p></div>
-      <input routerLink="/inscription" type="submit" value="Créer un compte" class="inputButtonLoginCreate"/>
-    </div>
-  </div>
-</div>-->
-
 <div class="container">
+  <div class="col-md-12">
+    <div id="logbox">
 	<form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
 		<div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
 		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		  {{message}}
 		</div>
-		<h2 class="form-signin-heading">Please sign in</h2>
+    <h1>Connexion à un compte</h1>
+    <p class="pSigninText">Veuillez rentrer votre nom d'utilisateur et votre mot de passe</p>
 		<label for="inputEmail" class="sr-only">Email address</label>
-		<input type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.username" name="username" required/>
+		<input type="email" class="InputLoginChamps" placeholder="Nom d'utilisateur" [(ngModel)]="loginData.username" name="username" required/>
 		<label for="inputPassword" class="sr-only">Password</label>
-		<input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginData.password" name="password" required/>
-		<button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!loginForm.form.valid">Sign in</button>
-		<p>
-			Not a member? <a [routerLink]="['/inscription']">Signup here</a>
-		</p>
+		<input type="password" class="InputLoginChamps" placeholder="Mot de passe" [(ngModel)]="loginData.password" name="password" required/>
+		<button class="inputButtonLoginConnexion" type="submit">Se connecter</button>
+    <div class="text-center"><p  class="simple_text">- OU -</p></div>
+    <button routerLink="/inscription" type="submit" class="inputButtonLoginCreate">Créer un compte</button>
 	</form>
+  </div>
+  </div>
 </div>

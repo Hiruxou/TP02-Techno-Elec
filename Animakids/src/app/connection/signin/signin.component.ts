@@ -14,6 +14,7 @@ export class SigninComponent implements OnInit {
 
   signupData = { username:'', password:'' };
   message = '';
+  data: any;
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -21,13 +22,17 @@ export class SigninComponent implements OnInit {
   }
 
   signup() {
-    this.http.post('/api/login',this.signupData).subscribe(resp => {
-      console.log(resp);
-      this.router.navigate(['login']);
-    }, err => {
-      this.message = err.error.msg;
-    });
-  }
+   this.http.post('/api/login',this.signupData).subscribe(resp => {
+     console.log(resp);
+     this.data = resp;
+     if (this.data.success == true)
+     this.router.navigate(['connection']);
+     else
+     this.message = this.data.msg;
+   }, err => {
+     this.message = err.error.msg;
+   });
+ }
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
