@@ -1,20 +1,33 @@
-<div class="container">
+<!--<div class="container">
   <div class="col-md-12">
-    <div id="logbox">
+    <div id="logbox">-->
       <!-- <form #f="ngForm" (ngSubmit)="onSubmitStep(1)" class="ng-untouched ng-pristine ng-valid"> -->
-        <h1>Enregistrement d'un joueur</h1>
+     <!--   <h1>Enregistrement d'un joueur</h1>
         <p class="pSigninText">Veuillez rentrer un pseudonyme et un mot de passe</p>
-        <input class="InputSigninChamps" name="user[name]" placeholder="Pseudonyme" required="required" type="name" [(ngModel)]="username">
-        <input name="user[password]" type="password" placeholder="Mot de passe" required="required" class="InputSigninChamps" [(ngModel)]="userPassword" />
-        <input name="user[password2]" type="password" placeholder="Confirmation mot de passe" required="required" class="InputSigninChamps" [(ngModel)]="userConfirmPassword" />
-        <p *ngIf="emailError">
-          {{this.errorMessage}}
-        </p>
-        <input class="inputButtonSigninNext" type="submit" value="Confirmer">
+        <input class="InputSigninChamps" name="user[name]" placeholder="Pseudonyme" required="required" type="name" [(ngModel)]="signupData.username">
+        <input name="user[password]" type="password" placeholder="Mot de passe" required="required" class="InputSigninChamps" [(ngModel)]="signupData.password" />
+
+        <input class="inputButtonSigninNext" type="submit" value="Confirmer" [disabled]="!signupForm.form.valid">
         <div class="text">
           <a routerLink="/connection"><button class="buttunSigninReturn">Retour</button></a>
-        </div>
+        </div>-->
       <!-- </form> -->
-    </div>
+  <!--  </div>
   </div>
+</div>-->
+
+
+<div class="container">
+	<form class="form-signin" (ngSubmit)="signup()" #signupForm="ngForm">
+		<div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  {{message}}
+		</div>
+		<h2 class="form-signin-heading">Sign Up Now</h2>
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" class="form-control" placeholder="Email address" [(ngModel)]="signupData.username" name="username" required/>
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" class="form-control" placeholder="Password" [(ngModel)]="signupData.password" name="password" required/>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!signupForm.form.valid">Sign Up</button>
+	</form>
 </div>
