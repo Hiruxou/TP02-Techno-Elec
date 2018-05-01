@@ -305,3 +305,57 @@ position: relative;
   margin-top: 5px;
   font-size: 140% !important;
 }
+
+/* ---------------------------- */
+/* -------------- */
+/* PAGE DE MENU */
+/* -------------- */
+/* ---------------------------- */
+
+.DecalageContainerMenu {
+margin-top: 5%;
+margin-left: 500px;
+width: 700px;
+border-radius: 10px;
+min-height: 300px;
+}
+
+.UpperTitreMenu {
+  font-size: 60px;
+  font-family: Apple Chancery;
+  text-align: center;
+}
+
+.UpperParagraphMenu {
+  font-size: 30px;
+  font-family: Apple Chancery;
+  text-align: center;
+}
+
+.inputButtonMenu {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #47CE42;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #379B33;
+  -moz-box-shadow: 0 5px 0 #379B33;
+  box-shadow: 0 5px 0 #379B33;
+}
+.inputButtonMenu:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #379B33;
+  -moz-box-shadow: 0 3px 0 #379B33;
+  box-shadow: 0 3px 0 #379B33;
+  cursor: pointer;
+}
+.inputButtonMenu:active {
+  top: 5px;
+  box-shadow: none;
+}
+.inputButtonMenu:focus {
+  outline: none;
+}

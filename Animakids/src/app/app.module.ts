@@ -38,6 +38,9 @@ const appRoutes: Routes = [
   children:
   [{path:'', component: BodyComponent},
    {path:'body', component: BodyComponent},
+   {path:'menu', component: MenuComponent},
+   {path:'jeu1', component: Jeu1Component},
+   {path:'jeu2', component: Jeu2Component},
    ]},
   { path: '**', component: ConnectionComponent }
 ];
