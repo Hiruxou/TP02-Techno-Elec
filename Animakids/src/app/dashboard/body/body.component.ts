@@ -18,8 +18,19 @@ export class BodyComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
-      this.imgetson = data;
-    });
+    // server.get('/usersList', function(req, res) {
+    //   userInfo.find({}, function(err, users) {
+    //     var userMap = {};
+    
+    //     users.forEach(function(user) {
+    //       userMap[user._id] = user;
+    //     });
+    
+    //     res.send(userMap);  
+    //   });
+    // });
+    // this.http.get('/api').subscribe(data => {
+    //   this.imgetson = data;
+    // });
   }
 }

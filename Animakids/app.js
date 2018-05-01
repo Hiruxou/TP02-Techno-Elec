@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/inscription', express.static(path.join(__dirname, 'dist')));
 app.use('/connection', express.static(path.join(__dirname, 'dist')));
+app.use('/login', express.static(path.join(__dirname, 'dist')));
 app.use('/dashboard', express.static(path.join(__dirname, 'dist')));
 app.use('/dashboard/jeu1', express.static(path.join(__dirname, 'dist')));
 app.use('/dashboard/jeu2', express.static(path.join(__dirname, 'dist')));
