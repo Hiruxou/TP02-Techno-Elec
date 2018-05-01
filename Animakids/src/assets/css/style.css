@@ -311,12 +311,10 @@ position: relative;
 }
 
 /* ---------------------------- */
-/* -------------- */
+/* ------------ */
 /* PAGE DE MENU */
-/* -------------- */
+/* ------------ */
 /* ---------------------------- */
-
-
 
 .DecalageContainerMenu {
   margin-top: 5%;
@@ -368,5 +366,45 @@ position: relative;
   box-shadow: none;
 }
 .inputButtonMenu:focus {
+  outline: none;
+}
+
+/* ---------------------------- */
+/* ------------ */
+/* PAGE DE Jeu1 */
+/* ------------ */
+/* ---------------------------- */
+
+.DecalageContainerJeu1 {
+  margin-top: 5%;
+  min-height: 300px;
+  margin-bottom: 2%;
+}
+
+.inputButtonJeu1 {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #3CC;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #2CADAD;
+  -moz-box-shadow: 0 5px 0 #2CADAD;
+  box-shadow: 0 5px 0 #2CADAD;
+}
+.inputButtonJeu1:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #2CADAD;
+  -moz-box-shadow: 0 3px 0 #2CADAD;
+  box-shadow: 0 3px 0 #2CADAD;
+  cursor: pointer;
+}
+.inputButtonJeu1:active {
+  top: 5px;
+  box-shadow: none;
+}
+.inputButtonJeu1:focus {
   outline: none;
 }
