@@ -17,6 +17,7 @@ import { MenuComponent } from './dashboard/body/menu/menu.component';
 import { Jeu1Component } from './dashboard/body/jeu1/jeu1.component';
 import { Jeu2Component } from './dashboard/body/jeu2/jeu2.component';
 import { FooterComponent } from './dashboard/layout/footer/footer.component';
+import { ScoreComponent } from './dashboard/body/score/score.component';
 
 const appRoutes: Routes = [
   {
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
    {path:'menu', component: MenuComponent},
    {path:'jeu1', component: Jeu1Component},
    {path:'jeu2', component: Jeu2Component},
+   {path:'score', component: ScoreComponent},
    ]},
   { path: '**', component: ConnectionComponent }
 ];
@@ -59,6 +61,7 @@ const appRoutes: Routes = [
     Jeu1Component,
     Jeu2Component,
     FooterComponent,
+    ScoreComponent,
   ],
   imports: [
     RouterModule.forRoot(

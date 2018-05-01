@@ -1,25 +1,25 @@
 <div class="container">
   <div class="col-md-12">
     <div id="logbox">
-	<form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
-		<div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
-		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		  {{message}}
-		</div>
-    <h1>Connexion à un compte</h1>
-    <p class="pSigninText">Veuillez rentrer votre nom d'utilisateur et votre mot de passe</p>
-		<label for="inputEmail" class="sr-only">Email address</label>
-		<input type="email" class="InputLoginChamps" placeholder="Nom d'utilisateur" [(ngModel)]="loginData.username" name="username" required/>
-		<label for="inputPassword" class="sr-only">Password</label>
-		<input type="password" class="InputLoginChamps" placeholder="Mot de passe" [(ngModel)]="loginData.password" name="password" required/>
-		<button class="inputButtonLoginConnexion" type="submit">Se connecter</button>
-    <div class="text-center"><p  class="simple_text">- OU -</p></div>
-    <button routerLink="/inscription" type="submit" class="inputButtonLoginCreate">Créer un compte</button>
-    <div style="text-align:center">
-    <a class="aLayoutLienFb" href="https://www.facebook.com/Animakids-1659443994091877/" target="_blank"><i class="fa fa-facebook fa-2x iLayoutIcone"></i> Facebook</a>
-    <a class="aLayoutLienFb" href="https://twitter.com/AnimaKidsWeb" target="_blank"><i class="fa fa-twitter fa-2x iLayoutIcone"></i> Twitter</a>
-  </div>
-	</form>
-  </div>
+	    <form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
+		    <div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
+		      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      {{message}}
+		    </div>
+        <h1>Connexion à un compte</h1>
+        <p class="pSigninText">Veuillez rentrer votre nom d'utilisateur et votre mot de passe</p>
+		    <label for="inputEmail" class="sr-only">Email address</label>
+		    <input type="email" class="InputLoginChamps" placeholder="Nom d'utilisateur" [(ngModel)]="loginData.username" name="username" required/>
+		    <label for="inputPassword" class="sr-only">Password</label>
+		    <input type="password" class="InputLoginChamps" placeholder="Mot de passe" [(ngModel)]="loginData.password" name="password" required/>
+		    <button class="inputButtonLoginConnexion" type="submit">Se connecter</button>
+        <div class="text-center"><p  class="simple_text">- OU -</p></div>
+        <button routerLink="/inscription" type="submit" class="inputButtonLoginCreate">Créer un compte</button>
+        <div style="text-align:center">
+          <a class="aLayoutLienFb" href="https://www.facebook.com/Animakids-1659443994091877/" target="_blank"><i class="fa fa-facebook fa-2x iLayoutIcone"></i> Facebook</a>
+          <a class="aLayoutLienFb" href="https://twitter.com/AnimaKidsWeb" target="_blank"><i class="fa fa-twitter fa-2x iLayoutIcone"></i> Twitter</a>
+        </div>
+	    </form>
+    </div>
   </div>
 </div>

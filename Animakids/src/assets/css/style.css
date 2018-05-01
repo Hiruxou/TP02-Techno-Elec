@@ -285,7 +285,7 @@ h1, input {
 }
 
 .aLayoutLien {
-margin-left: 3%;
+margin-left: 1%;
 font-size: 80%;
 color: white;
 }
@@ -407,4 +407,17 @@ position: relative;
 }
 .inputButtonJeu1:focus {
   outline: none;
+}
+
+/* ---------------------------- */
+/* ------------ */
+/* PAGE DE Jeu2 */
+/* ------------ */
+/* ---------------------------- */
+
+.UpperParagraphJeu2 {
+  font-size: 30px;
+  font-family: Apple Chancery;
+  text-align: center;
+  margin-right: 30px;
 }

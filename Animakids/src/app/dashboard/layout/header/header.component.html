@@ -1,17 +1,15 @@
 <div class="container">
-    <div class="row">
+  <div class="row">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" routerLink="/dashboard/menu"><u>ANIMAKIDS</u></a>
+      <a class="navbar-brand" routerLink="/dashboard/menu"><u>ANIMAKIDS</u></a>
       <div class="collapse navbar-collapse">
-            <div class="navbar-nav mr-auto">
-            <a class="aHeaderProfil" routerLink="/dashboard/jeu1"> Mode de jeu 1 : Images</a>
-            <a class="aHeaderProfil" routerLink="/dashboard/jeu2"> Mode de jeu 2 : Son</a>
-            <a class="aHeaderProfil" routerLink="/dashboard"> Score</a>
-            </div>
-            <form class="form-inline">
-            </form>
-            <button class="btn btn-danger" style="width:10%" (click)="logout()">Déconnexion</button>
+        <div class="navbar-nav mr-auto">
+          <a class="aHeaderProfil" routerLink="/dashboard/jeu1"> Mode de jeu 1 : Images</a>
+          <a class="aHeaderProfil" routerLink="/dashboard/jeu2"> Mode de jeu 2 : Son</a>
+          <a class="aHeaderProfil" routerLink="/dashboard/score"> Tableu des Scores</a>
         </div>
+        <button class="btn btn-danger" style="width:10%" (click)="logout()">Déconnexion</button>
+      </div>
     </nav>
   </div>
 </div>

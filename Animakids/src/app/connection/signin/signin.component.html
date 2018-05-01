@@ -1,22 +1,22 @@
 <div class="container">
   <div class="col-md-12">
     <div id="logbox">
-	<form class="form-signin" (ngSubmit)="signup()" #signupForm="ngForm">
-		<div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
-		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		  {{message}}
-		</div>
-		<h1>Enregistrement d'un joueur</h1>
-    <p class="pSigninText">Veuillez rentrer un nom d'utilisateur et un mot de passe</p>
-		<label for="inputEmail" class="sr-only">Email address</label>
-		<input type="email" class="InputSigninChamps" placeholder="Nom d'utilisateur" [(ngModel)]="signupData.username" name="username" required/>
-		<label for="inputPassword" class="sr-only">Password</label>
-		<input type="password" class="InputSigninChamps" placeholder="Mot de passe" [(ngModel)]="signupData.password" name="password" required/>
-		<button class="inputButtonSigninNext" type="submit">Enregistrer</button>
-    <div class="text">
-      <a routerLink="/connection"><button class="buttunSigninReturn">Retour</button></a>
+	    <form class="form-signin" (ngSubmit)="signup()" #signupForm="ngForm">
+		    <div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
+		      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      {{message}}
+		    </div>
+		    <h1>Enregistrement d'un joueur</h1>
+        <p class="pSigninText">Veuillez rentrer un nom d'utilisateur et un mot de passe</p>
+		    <label for="inputEmail" class="sr-only">Email address</label>
+		    <input type="email" class="InputSigninChamps" placeholder="Nom d'utilisateur" [(ngModel)]="signupData.username" name="username" required/>
+		    <label for="inputPassword" class="sr-only">Password</label>
+		    <input type="password" class="InputSigninChamps" placeholder="Mot de passe" [(ngModel)]="signupData.password" name="password" required/>
+		    <button class="inputButtonSigninNext" type="submit">Enregistrer</button>
+        <div class="text">
+          <a routerLink="/connection"><button class="buttunSigninReturn">Retour</button></a>
+        </div>
+	    </form>
     </div>
-	</form>
-  </div>
   </div>
 </div>

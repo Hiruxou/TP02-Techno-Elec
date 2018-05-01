@@ -28,6 +28,7 @@ app.use('/login', express.static(path.join(__dirname, 'dist')));
 app.use('/dashboard', express.static(path.join(__dirname, 'dist')));
 app.use('/dashboard/jeu1', express.static(path.join(__dirname, 'dist')));
 app.use('/dashboard/jeu2', express.static(path.join(__dirname, 'dist')));
+app.use('/dashboard/score', express.static(path.join(__dirname, 'dist')));
 app.use('/api', api);
 
 // catch 404 and forward to error handler
