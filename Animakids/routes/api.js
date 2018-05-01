@@ -6,8 +6,6 @@ var express = require('express');
 var jwt = require('jsonwebtoken');
 var router = express.Router();
 var User = require("../models/user");
-var Jeu1 = require("../models/Score1");
-var Jeu2 = require("../models/Score2");
 var ImageEtSons = require("../models/ImageEtSons");
 
 router.get('/images', function(req, res, next) {
