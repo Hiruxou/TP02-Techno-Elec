@@ -13,15 +13,18 @@ import { of } from 'rxjs/observable/of';
 export class DashboardComponent implements OnInit {
   imagetsons: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) {
+    if (!localStorage.getItem("jwtToken"))
+    {
+      this.router.navigate(['/connection']);
+    }
+   }
 
   ngOnInit() {
-    console.log("TEST1");
     this.http.get('/api/images').subscribe(data => {
       this.imagetsons = data;
       console.log(data);      
     });
-    console.log("TEST2");
   }
 
 }

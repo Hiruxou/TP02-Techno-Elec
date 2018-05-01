@@ -1,11 +1,27 @@
-<div class="container DecalageContainerJeu1">
-  <div class="row">
-    <div class="col-md-12" style="text-align:center">
-      <img id="imagejeu1" src="assets/images/elephant.jpg" alt="" title="" height="250" width="250"/>
-      <button routerLink="" type="submit" class="inputButtonJeu1">Réponse 1</button>
-      <button routerLink="" type="submit" class="inputButtonJeu1">Réponse 2</button>
-      <button routerLink="" type="submit" class="inputButtonJeu1">Réponse 3</button>
-      <button routerLink="" type="submit" class="inputButtonJeu1">Réponse 4</button>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+ <script>
+var myApp = angular.module("myApp", []);
+ myApp.controller("myController", function($scope) {
+ this.my = Math.floor((Math.random() * 15));
+ this.imageUrl = "assets/images/{{ imagetsons}}"+$my+"{{.images }}";
+ changeUrl = function() {
+   console.log("TEST");
+    while (this.my in this.did)
+     $my = Math.floor((Math.random() * 15));
+    
+	  this.imageUrl = "assets/images/{{ imagetsons}}"+$my+"{{.images }}";
+    };
+});
+
+</script><div class="container DecalageContainerJeu1">
+  <div ng-app="MyApp" class="row">
+    <div ng-controller="myController" class="col-md-12" style="text-align:center">
+      <img id="imagejeu1" src="{{imageUrl}}" alt="" title="" height="250" width="250"/>
+      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 1</button>
+      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 2</button>
+      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 3</button>
+      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 4</button>
     </div>
   </div>
 </div>
+
