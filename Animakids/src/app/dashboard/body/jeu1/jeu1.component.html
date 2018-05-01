@@ -2,10 +2,10 @@
 <div ng-app="MyApp" class="row">
     <div ng-controller="myController" class="col-md-12" style="text-align:center">
       <img id="imagejeu1" src="{{imageUrl}}" alt="" title="" height="250" width="250"/>
-      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 1</button>
-      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 2</button>
-      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 3</button>
-      <button on-click="changeUrl()" class="inputButtonJeu1">Réponse 4</button>
+      <button on-click="changeUrl('0')" class="inputButtonJeu1">{{responses[0]}}</button>
+      <button on-click="changeUrl('1')" class="inputButtonJeu1">{{responses[1]}}</button>
+      <button on-click="changeUrl('2')" class="inputButtonJeu1">{{responses[2]}}</button>
+      <button on-click="changeUrl('3')" class="inputButtonJeu1">{{responses[3]}}</button>
     </div>
   </div>
 </div>
