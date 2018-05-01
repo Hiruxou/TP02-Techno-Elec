@@ -12,9 +12,12 @@ import { of } from 'rxjs/observable/of';
 })
 export class MenuComponent implements OnInit {
 
+  data :any;
+
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
+    this.data = sessionStorage.getItem("user");
   }
 
   getUser() {
