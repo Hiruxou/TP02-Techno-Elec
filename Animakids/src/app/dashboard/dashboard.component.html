@@ -1,24 +1,2 @@
 <app-layout></app-layout>
 <router-outlet></router-outlet>
-<div class="container">
-    <h1>Book List</h1>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let imagetson of imagetsons">
-        <audio id="player">
-                <source id="source" src= "/src/assets/sounds/{{ imagetson.son }}">
-                </audio>
-          <td>{{ imagetson.image }}</td>
-          <td>{{ imagetson.son }}</td>
-          <td>Show Detail</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
