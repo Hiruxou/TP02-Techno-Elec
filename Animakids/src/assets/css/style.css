@@ -26,7 +26,11 @@
 }
 
 body {
-  background: #3CC;
+
+  margin: 0;
+  background: #E2E6E6;
+  padding: 0;
+
 }
 
 .container {
@@ -312,24 +316,31 @@ position: relative;
 /* -------------- */
 /* ---------------------------- */
 
+
+
 .DecalageContainerMenu {
-margin-top: 5%;
-margin-left: 500px;
-width: 700px;
-border-radius: 10px;
-min-height: 300px;
+  margin-top: 5%;
+  min-height: 300px;
+  margin-bottom: 2%;
+  margin-left: 250px;
+  width: 1750px !important;
+  max-width: 1750px !important;
 }
 
 .UpperTitreMenu {
   font-size: 60px;
   font-family: Apple Chancery;
   text-align: center;
+  margin-left: 80px;
+  margin-right: 30px;
 }
 
 .UpperParagraphMenu {
   font-size: 30px;
   font-family: Apple Chancery;
   text-align: center;
+  margin-left: 80px;
+  margin-right: 30px;
 }
 
 .inputButtonMenu {
