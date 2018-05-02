@@ -29,7 +29,7 @@ export class Jeu1Component implements OnInit {
     {
       if (id == this.response)
         this.score++;
-      this.result = "ton score est de " + this.score + "/10";
+      this.result = "Ton score est de " + this.score + "/10";
     }
     else if (this.result == "")
     {
